@@ -1,0 +1,32 @@
+<!-- <p>list-residence works!</p> -->
+<div class="container">
+    <div class="row">
+        <div class="col-3" *ngFor="let r of residences">
+            <div class="card" style="width: 18rem;" >
+                <img [src]="r.image" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{r.name}}</h5>
+                        <p class="card-text">{{r.address}}</p>
+                        <button class="btn btn-primary" (click)="showAppartement(r)">Show appartements</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+    <table class="table" *ngIf="listApartementFiltred.length > 0">
+        <thead>
+            <tr>
+                <th>Num appart</th>
+                <th>Floor Num</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let a of listApartementFiltred">
+                <td>{{a.appartNum}}</td>
+                <td>{{a.floorNum}}</td>
+            
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
