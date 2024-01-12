@@ -7,6 +7,8 @@ import { ListResidenceComponent } from './list-residence/list-residence.componen
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { UsersComponent } from './users/users.component';
+import { DetailsUserComponent } from './details-user/details-user.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 
 @NgModule({
@@ -14,7 +16,9 @@ import { UsersComponent } from './users/users.component';
     AppComponent,
     NavBarComponent,
     ListResidenceComponent,
-    UsersComponent
+    UsersComponent,
+    DetailsUserComponent,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,
